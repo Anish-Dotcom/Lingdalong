@@ -4,34 +4,27 @@ using UnityEngine;
 
 public class REALWALK : MonoBehaviour
 {
-    public float moveSpeed;
     public Rigidbody2D rb;
+    public float moveSpeed;
 
-    private Vector2 moveDirection;
+    public Animator myAnim;
+
+    // Use this for initialization
+    void Start()  {
+
+    }
 
     // Update is called once per frame
-    void Update()
-    {
-       // processing inputs 
-       ProcessInputs();
-    }
+    void Update() {
+        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
 
-     void FixedUpdate()
-    {
-        // physics calculations
-        Move();
-    }
+        myAnim.SetFloat("moveX", rb.velocity.x);
+        myAnim.SetFloat("moveY", rb.velocity.y);
 
-    void ProcessInputs()
-    {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
-
-        moveDirection= new Vector2(moveX, moveY); // come back to this
-    }
-
-     void Move()
-    {
-        rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+        if(Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+        {
+            myAnim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
+            myAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+        }
     }
 }

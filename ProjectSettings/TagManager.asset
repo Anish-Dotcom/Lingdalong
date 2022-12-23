@@ -47,6 +47,12 @@ TagManager:
   - name: Solid
     uniqueID: 1513061641
     locked: 0
+  - name: SolidObjects
+    uniqueID: 386953391
+    locked: 0
+  - name: Npc
+    uniqueID: 2634422593
+    locked: 0
   - name: Player
     uniqueID: 1916334273
     locked: 0

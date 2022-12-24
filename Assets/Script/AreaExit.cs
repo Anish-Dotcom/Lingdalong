@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class exit : MonoBehaviour
+public class areaexit : MonoBehaviour
 {
     public string sceneToLoad;
     public string areaTransitionName;

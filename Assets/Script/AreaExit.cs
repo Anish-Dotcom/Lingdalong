@@ -7,20 +7,11 @@ public class AreaExit : MonoBehaviour
 {
 
     public string areaToLoad;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("NITG");
         if(collision.gameObject.tag == "Player")
         {
             SceneManager.LoadScene(areaToLoad);

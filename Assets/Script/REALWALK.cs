@@ -11,6 +11,7 @@ public class REALWALK : MonoBehaviour
     public static REALWALK instance;
     public string areaTransitionName;
 
+
     // Use this for initialization
     void Awake()  {
         if(instance == null)

@@ -8,9 +8,21 @@ public class REALWALK : MonoBehaviour
     public float moveSpeed;
 
     public Animator myAnim;
+    public static REALWALK instance;
+    public string areaTransitionName;
 
     // Use this for initialization
-    void Start()  {
+    void Awake()  {
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        instance = this;
+
         DontDestroyOnLoad(gameObject);
     }
 

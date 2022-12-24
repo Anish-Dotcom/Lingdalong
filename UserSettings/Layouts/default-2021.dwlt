@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 424.8
     width: 276.80005
     height: 306
-  m_MinSize: {x: 240, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 242, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 606
+  controlID: 23
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 26
+  controlID: 128
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 119
+  controlID: 137
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -295,8 +295,8 @@ MonoBehaviour:
     y: 0
     width: 673.6
     height: 375.2
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -423,9 +423,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 34630000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 1257fffffc59fffffe59ffff765affff0c5bffff185bffffa25bffffa45bfffff85bffff765cfffff674ffff0275ffffd675ffffd875ffff5c7fffff687fffff2480ffffaa80ffff2a81ffff2c81ffffac81ffff5886ffff6486ffffc889ffff2c8affff928affff108dffff128dffff668dffffcc8dffff6493fffffe93ffffb496ffff5a9cffffc09cffff1c9dffff709dffffee9dffffd09effff08c9ffff68c9ffff22cbffff18ccffff9eccfffffeccffffd0ceffff18d8ffffd4e8ffff28e9ffffecf2ffffb2f4ffff28f5ffffd6f7ffff1cf8ffff6cf8fffffef8ffff22fbfffffc750000c8b30000
+      m_ExpandedIDs: 20d0ffff2cd0ffffead0ffffecd0ffff58d1ffffdcd3ffffe8d3ffff5cd4ffff5ed4ffffe4d4fffff0d4ffff56d5ffff52d7ffffb4d7ffff22d8ffff24d8fffff8d8ffff04d9ffff72d9ffff74d9ffffe2dbffffeedbffff5cdcffff5edcffff66deffffdedeffffeadeffffe8e2fffff4e2ffff60e3ffff62e3ffff82e6ffff8ee6ffffcae7ffff0cebffffccebffff38ecffff9aecffff54edffff50f1ffffa4f1ffff02f2ffff3cf4ffff8cf4ffffe6f4ffff36f5ffff86f5ffffe0f5ffff36f6ffffd2f6ffff86f7ffffdef7ffff42f8ffff98f8ffffeaf8ffff6cf9ffffc2f9ffff12fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -531,22 +531,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Script
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Script
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\anish\OneDrive\Documents\GitHub\Lingdalong
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1e610000
-    m_LastClickedID: 24862
-    m_ExpandedIDs: 00000000fa600000fc600000fe60000000ca9a3b
+    m_SelectedIDs: fc720000
+    m_LastClickedID: 29436
+    m_ExpandedIDs: 00000000fc600000fe60000000610000f672000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -574,7 +574,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fa600000fc600000fe600000
+    m_ExpandedIDs: 00000000fc600000fe60000000610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -688,8 +688,8 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 1
-    m_VSlider: 1
+    m_HSlider: 0
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -702,18 +702,18 @@ MonoBehaviour:
       y: 21
       width: 672.6
       height: 313.59998
-    m_Scale: {x: 1.2970358, y: 1.2970358}
-    m_Translation: {x: 336.29996, y: 156.79999}
+    m_Scale: {x: 1.0803947, y: 1.0803947}
+    m_Translation: {x: 336.3, y: 156.79999}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -259.28348
-      y: -120.89102
-      width: 518.567
-      height: 241.78204
+      x: -311.27512
+      y: -145.13213
+      width: 622.55023
+      height: 290.26425
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 840.75, y: 418.24997}
@@ -755,8 +755,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -100, y: -25.600006}
+      snapOffset: {x: -100, y: -25.600006}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -766,9 +766,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -141, y: 149}
+      snapOffset: {x: -141, y: -180.6}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 1
+      snapCorner: 3
       id: unity-grid-and-snap-toolbar
       index: 1
       layout: 1
@@ -986,7 +986,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Tilemap Focus
@@ -1002,9 +1002,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.5208113, y: -1.2605613, z: -0.079098634}
+    m_Target: {x: -0.3855448, y: 1.0271658, z: -0.025315994}
     speed: 2
-    m_Value: {x: -1.8322365, y: -1.3702161, z: -0.07516254}
+    m_Value: {x: -0.3855448, y: 1.0271658, z: -0.025315994}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1055,9 +1055,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.14045
+    m_Target: 6.7524743
     speed: 2
-    m_Value: 8.746841
+    m_Value: 6.7524743
   m_Ortho:
     m_Target: 1
     speed: 2

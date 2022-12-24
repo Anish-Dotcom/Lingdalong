@@ -155,6 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: House1
   areaTransitionName: 
+  TheEnterence: {fileID: 0}
 --- !u!61 &51660377
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -931,6 +932,17 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!114 &1338600223 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1176317767, guid: d9ca5ae56f1ade142ba514e264906207, type: 3}
+  m_PrefabInstance: {fileID: 2893543296418149069}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3479af9de9cff8847a1d98c985a9ebf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1441002106
 GameObject:
   m_ObjectHideFlags: 0
@@ -4667,11 +4679,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1176317767, guid: d9ca5ae56f1ade142ba514e264906207, type: 3}
       propertyPath: transitionName
-      value: Hajimari-2
+      value: Hajimari-1
       objectReference: {fileID: 0}
     - target: {fileID: 1176317768, guid: d9ca5ae56f1ade142ba514e264906207, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.58
+      value: 4.25
       objectReference: {fileID: 0}
     - target: {fileID: 1176317768, guid: d9ca5ae56f1ade142ba514e264906207, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4725,6 +4737,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2893543297107255453, guid: d9ca5ae56f1ade142ba514e264906207, type: 3}
+      propertyPath: sceneToLoad
+      value: Mainworld
+      objectReference: {fileID: 0}
+    - target: {fileID: 2893543297107255453, guid: d9ca5ae56f1ade142ba514e264906207, type: 3}
+      propertyPath: TheEnterence
+      value: 
+      objectReference: {fileID: 1338600223}
     - target: {fileID: 2893543297107255453, guid: d9ca5ae56f1ade142ba514e264906207, type: 3}
       propertyPath: areaTransitionName
       value: Hajimari-1

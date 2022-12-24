@@ -3,19 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class AreaExit : MonoBehaviour
+public class areaexit : MonoBehaviour
 {
+    public string sceneToLoad;
 
-    public string areaToLoad;
-
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("NITG");
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(areaToLoad);
-            Debug.Log("nay");
+            SceneManager.LoadScene(sceneToLoad);
         }
     }
 }

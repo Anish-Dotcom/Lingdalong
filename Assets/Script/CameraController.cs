@@ -23,18 +23,18 @@ public class CameraController : MonoBehaviour
         halfHight = Camera.main.orthographicSize;
         halfwidth = halfHight * Camera.main.aspect;
 
-        bottemLeftLimit = themap.localBounds.min;
-        TopRightLimit = themap.localBounds.max;
-
-
+        bottemLeftLimit = themap.localBounds.min + new Vector3(halfwidth, halfHight, 0f);
+        TopRightLimit = themap.localBounds.max + new Vector3(-halfwidth, -halfHight, 0f);
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
 
 
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottemLeftLimit.x, TopRightLimit.x), Mathf.Clamp(transform.position.y, bottemLeftLimit.y, TopRightLimit.x), transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottemLeftLimit.x, TopRightLimit.x),
+                                 Mathf.Clamp(transform.position.y, bottemLeftLimit.y, TopRightLimit.y),
+                                 transform.position.z);
     }
 }

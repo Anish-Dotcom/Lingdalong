@@ -11,6 +11,8 @@ public class REALWALK : MonoBehaviour
     public static REALWALK instance;
     public string areaTransitionName;
 
+    private Vector3 bottemLeftLimit;
+    private Vector3 TopRightLimit;
 
     // Use this for initialization
     void Awake()  {
@@ -38,5 +40,13 @@ public class REALWALK : MonoBehaviour
             myAnim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
             myAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
         }
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottemLeftLimit.x, TopRightLimit.x),
+                                 Mathf.Clamp(transform.position.y, bottemLeftLimit.y, TopRightLimit.y),
+                                 transform.position.z);
+    }
+
+    public void SetBounds(Vector3 botleft,Vector3 topRight)
+    {
+
     }
 }

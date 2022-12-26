@@ -13,11 +13,8 @@ public class AreaEnterence : MonoBehaviour
         if (transitionName == REALWALK.instance.areaTransitionName)
         {
             REALWALK.instance.transform.position = transform.position;
-            Debug.Log("nay");
-        } else
-        {
-            Debug.Log("nig");
-        }
+            
+        } 
         
     }
 

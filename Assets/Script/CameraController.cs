@@ -25,6 +25,20 @@ public class CameraController : MonoBehaviour
 
         bottemLeftLimit = themap.localBounds.min + new Vector3(halfwidth, halfHight, 0f);
         TopRightLimit = themap.localBounds.max + new Vector3(-halfwidth, -halfHight, 0f);
+
+        StartCoroutine(GetLocalBounds());
+
+
+
+        IEnumerator GetLocalBounds()
+
+        {
+
+            yield return new WaitForSeconds(0.1f);
+
+            REALWALK.instance.SetBounds(themap.localBounds.min, themap.localBounds.max);
+
+        }
     }
 
     // Update is called once per frame

@@ -40,13 +40,17 @@ public class REALWALK : MonoBehaviour
             myAnim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
             myAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
         }
+
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottemLeftLimit.x, TopRightLimit.x),
                                  Mathf.Clamp(transform.position.y, bottemLeftLimit.y, TopRightLimit.y),
                                  transform.position.z);
     }
 
-    public void SetBounds(Vector3 botleft,Vector3 topRight)
+    public void SetBounds(Vector3 botLeft, Vector3 topRight)
     {
+        bottemLeftLimit = botLeft;
+        TopRightLimit = topRight; 
 
+        
     }
 }

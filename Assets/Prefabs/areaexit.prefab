@@ -119,3 +119,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Home
   areaTransitionName: 
+  TheEnterence: {fileID: 0}

@@ -12,6 +12,7 @@ public class PlayerLoader : MonoBehaviour
         if(REALWALK.instance == null)
         {
             Instantiate(player);
+            REALWALK.instance.transform.position = transform.position;
         }
     }
 

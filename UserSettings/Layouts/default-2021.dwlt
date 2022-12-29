@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 6326
+  controlID: 30
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 84
+  controlID: 21
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 85
+  controlID: 22
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,8 +269,8 @@ MonoBehaviour:
     y: 0
     width: 344
     height: 730.8
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -394,9 +394,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 72b6ffff
-      m_LastClickedID: -18830
-      m_ExpandedIDs: 7cb6ffff88bcffff00bdffffc2bdffffcebeffff28bfffff94c0ffff96c0ffff30c2ffff22c3ffff24c3ffff94c3ffff20c4ffff72c4ffffbcc4ffff20c5ffffc6c6ffffd0c6ffff6cc8ffff6ec8ffff42d0ffff64d2fffff2d2ffff54d3ffffb4d5fffff0d6ffff78d8ffff02daffff04daffff4cdcffff58dcffff62dcffff0addffff0cddffff52ddffffaee1ffff3ae2ffff44e2ffff8ae2fffffce2ffff7ee3ffff1ce4ffff80e4ffff5ee5ffff16e6ffff7ae7ffffc2e8ffff3ae9ffffc0e9ffff06eaffff72eaffff2afbffff7a5f0000eaa30000daab00002eb30000a0b30000
+      m_SelectedIDs: 081e0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: c47fffff2480ffffd482ffff1e85ffff3e89ffff6c8cffffc48dffff2a8effff1092ffff1694ffff7c94fffffa94ffff9095ffffb698ffff369bffff969bfffffe9dffff929efffff69effffb4a3ffffe6afffff96b0fffff8b0ffffa2cdffffe4d0ffffbadcffff24deffff82defffff8deffff0ae2ffffcae6ffff28e7ffff18e9ffff9cebffffc8ecffffb8eeffff62f1ffff9af2ffff18f3ffff88f3ffffe8f3ffff8af4ffffeaf4ffffb2f5ffff3ef6ffffb0f6ffffd0faffff807800002e790000aa790000f4a3000014a5000048a6000068b30000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -502,22 +502,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Script
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Script
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\anish\OneDrive\Documents\GitHub\Lingdalong
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 36610000
-    m_LastClickedID: 24886
-    m_ExpandedIDs: 00000000186100001a6100001c61000000ca9a3b
+    m_SelectedIDs: 58750000
+    m_LastClickedID: 30040
+    m_ExpandedIDs: 00000000186200001a6200001c6200005c75000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -533,7 +533,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -545,7 +545,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000186100001a6100001c610000
+    m_ExpandedIDs: 00000000186200001a6200001c620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -597,7 +597,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 89}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 115
@@ -957,7 +957,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Tilemap Focus
@@ -973,9 +973,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.9872936, y: 0.35222608, z: -0.04827919}
+    m_Target: {x: -4.043376, y: -1.700542, z: 0.017674033}
     speed: 2
-    m_Value: {x: -1.9872936, y: 0.35222608, z: -0.04827919}
+    m_Value: {x: -4.043376, y: -1.700542, z: 0.017674033}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1026,9 +1026,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 8.291456
+    m_Target: 5.200084
     speed: 2
-    m_Value: 8.291456
+    m_Value: 5.200084
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1046,7 +1046,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.1659908, y: 0.59309536, z: -0.12660584, w: -0.7775971}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 

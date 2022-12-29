@@ -117,6 +117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 784cd01a76455af4ca7cd82870c195ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Home
+  sceneToLoad: 
   areaTransitionName: 
-  TheEnterence: {fileID: 0}
+  TheEnterence: {fileID: 1176317767}

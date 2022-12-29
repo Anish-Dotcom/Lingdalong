@@ -253,8 +253,8 @@ MonoBehaviour:
     name: Cat
     sentences:
     - Meow...?
-    - Why hello there Ling-Long! You have a very similar name to Bing-Bong.
-    - You don't know who Bing-Bong is? That is very dissappointing.
+    - Why hello there LingLong! You have a very similar name to BingBong.
+    - You don't know who BingBong is? That is very dissappointing.
   diaBox: {fileID: 1538605720}
   diaText: {fileID: 87079130}
   dia: 

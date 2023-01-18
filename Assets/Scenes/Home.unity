@@ -1105,6 +1105,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3479af9de9cff8847a1d98c985a9ebf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1400880101 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3886109332547007881, guid: a888d6abb887fdb4b8e33b28ad317454, type: 3}
+  m_PrefabInstance: {fileID: 1499735418}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1441002106
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,6 +1219,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3886109332547007887, guid: a888d6abb887fdb4b8e33b28ad317454, type: 3}
   m_PrefabInstance: {fileID: 1499735418}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1499735422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400880101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21cee3c7666644f48a9a5d92e21ce6df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charName: 
+  playerLevel: 1
+  currentEXP: 0
+  expToNextLevel: 
+  maxLevel: 100
+  baseEXP: 100
+  currentHP: 0
+  maxHP: 100
+  strength: 0
+  defence: 0
 --- !u!1001 &1691808683
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -22,7 +22,7 @@ public class InventoryManager : MonoBehaviour
             } else
             {
                 theMenu.SetActive(true);
-            }
+            }  
         }
     }
 }

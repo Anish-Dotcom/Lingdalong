@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -8718,11 +8718,11 @@ TextureImporter:
       tilemap_330: 1032263232
       tilemap_147: 687993840
       tilemap_275: -893137178
-      tilemap_176: -158479063
       tilemap_80: 1670412899
-      tilemap_215: 1781305764
       tilemap_189: 572893287
+      tilemap_215: 1781305764
       tilemap_3: 547975835
+      tilemap_176: -158479063
       tilemap_393: 1402355828
       tilemap_148: 948296540
       tilemap_357: 1660075433
@@ -8813,11 +8813,11 @@ TextureImporter:
       tilemap_346: -779399679
       tilemap_0: -1750132734
       tilemap_109: 339864490
+      tilemap_391: 557895592
       tilemap_203: 1793680992
       tilemap_344: 1709502101
       tilemap_321: 2057204112
       tilemap_27: 1640416984
-      tilemap_391: 557895592
       tilemap_99: 1873166465
       tilemap_112: 1965751992
       tilemap_1: -1600839554
@@ -8909,8 +8909,8 @@ TextureImporter:
       tilemap_302: 298838543
       tilemap_12: 1844879299
       tilemap_83: -1345846614
-      tilemap_144: 732540775
       tilemap_383: -399329474
+      tilemap_144: 732540775
       tilemap_207: -1234508358
       tilemap_257: 1174914460
       tilemap_9: -1359273099

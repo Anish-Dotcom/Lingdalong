@@ -1,24 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
 
 public class PlayerLoader : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject playerPrefab;
+    private GameObject playerInstance;
 
     // Start is called before the first frame update
     void Start()
     {
-        if(REALWALK.instance == null)
-        {
-            Instantiate(player);
-            REALWALK.instance.transform.position = transform.position;
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        playerInstance = Instantiate(playerPrefab, transform.position, Quaternion.identity);
     }
 }

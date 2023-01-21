@@ -9,18 +9,16 @@ public class AreaEnterence : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        if (transitionName == REALWALK.instance.areaTransitionName)
+        if (REALWALK.instance != null && transitionName == REALWALK.instance.areaTransitionName)
         {
             REALWALK.instance.transform.position = transform.position;
-            
-        } 
-        
+
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

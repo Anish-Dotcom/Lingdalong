@@ -3354,9 +3354,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 8587998322145492292, guid: 257062636ba9c70429e7f8c0a6048b7d, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 3886109332547007887, guid: a888d6abb887fdb4b8e33b28ad317454, type: 3}
+    - target: {fileID: 8587998322145492292, guid: 257062636ba9c70429e7f8c0a6048b7d, type: 3}
       propertyPath: themap
       value: 
       objectReference: {fileID: 1272503886}
+    - target: {fileID: 8587998323887024617, guid: 257062636ba9c70429e7f8c0a6048b7d, type: 3}
+      propertyPath: orthographic size
+      value: 3.621738
+      objectReference: {fileID: 0}
     - target: {fileID: 8587998323887024619, guid: 257062636ba9c70429e7f8c0a6048b7d, type: 3}
       propertyPath: m_Name
       value: Custom Camera

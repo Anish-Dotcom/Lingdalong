@@ -1,10 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
     public GameObject theMenu;
+
+    public PlayerStats[] charstats;
+
+    public Text[] nextText, hpText, lvlText, expText;
+    public Slider[] expSlider;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -24,5 +31,10 @@ public class InventoryManager : MonoBehaviour
                 theMenu.SetActive(true);
             }  
         }
+    }
+
+    public void updateMenuStats()
+    {
+        charstats = GameManager.instance.playerStats;
     }
 }

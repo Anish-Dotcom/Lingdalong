@@ -299,12 +299,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea53c9a0374ff7845983393990dc484c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 1554920205}
-  dialogueText: {fileID: 87079130}
-  catIsMoving: 0
-  diaBox: {fileID: 1538605720}
   speed: 5
-  targetPosition: {x: 12, y: -1}
+  targetPosition: {x: 12, y: 0}
   a: 1
 --- !u!50 &1010130908
 Rigidbody2D:

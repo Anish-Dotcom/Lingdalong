@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class CatMovement : MonoBehaviour
 {
-    GameObject catIsMoving = GameObject.Find("DialogueManager");
-
     public float speed = 5f; // The speed at which the NPC moves
     public Vector2 targetPosition; // The target position to move towards
     public bool a = false;
@@ -16,10 +14,12 @@ public class CatMovement : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
+    void Update()
     {
-        if (catIsMoving == true)
+        if (DialogueManager.instance.catIsMoving == true)
         {
+
+
             // Calculate the direction vector towards the target
             Vector2 direction = (targetPosition - rb2d.position).normalized;
 

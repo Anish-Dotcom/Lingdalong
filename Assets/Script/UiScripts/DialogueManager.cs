@@ -9,12 +9,15 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     public bool catIsMoving;
 
+    public static DialogueManager instance;
+
     public GameObject diaBox;
 
     private Queue<string> sentences;
     void Start()
     {
         sentences = new Queue<string>();
+        instance = this;
     }
 
     public void StartDialogue(Dialogue dialogue)

@@ -7,6 +7,7 @@ public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
     public Text dialogueText;
+    public bool catIsMoving;
 
     public GameObject diaBox;
 
@@ -35,6 +36,7 @@ public class DialogueManager : MonoBehaviour
         if (sentences.Count == 0)
         {
             diaBox.SetActive(false);
+            catIsMoving = true;
             return;
         }
 

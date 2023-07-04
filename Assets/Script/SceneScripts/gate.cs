@@ -10,6 +10,8 @@ public class gate : puzzle1
     public Tile closedGateTile;
     public Tile openedGateTile;
 
+    public GameObject interact;
+
     public int x;
     public int y;
     public int z;
@@ -47,6 +49,7 @@ public class gate : puzzle1
     {
         if (collision.gameObject.tag == "Player")
             playerInRange = true;
+            interact.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -54,5 +57,6 @@ public class gate : puzzle1
         if (collision.gameObject.tag == "Player")
             playerInRange = false;
             uibox.SetActive(false);
+            interact.SetActive(false);
     }
 }

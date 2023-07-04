@@ -12,11 +12,18 @@ public class DialogueTrigger : MonoBehaviour
     public bool playerInRange;
     public bool catDialogue = true;
 
+    public GameObject interact;
+
     public static DialogueTrigger instance;
 
+    private void Start()
+    {
+        instance = this;
+    }
 
     private void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.Space) && playerInRange && catDialogue == true)
         {
             if (diaBox.activeInHierarchy)
@@ -35,6 +42,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
             playerInRange = true;
+            interact.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -42,5 +50,6 @@ public class DialogueTrigger : MonoBehaviour
         if (collision.gameObject.tag == "Player")
             playerInRange = false;
             diaBox.SetActive(false);
+            interact.SetActive(false);
     }
 }

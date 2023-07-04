@@ -5065,6 +5065,10 @@ PrefabInstance:
       propertyPath: cat
       value: 
       objectReference: {fileID: 1010130901}
+    - target: {fileID: 5661498256054247460, guid: 6213d327795cdd145915b0a9f03fa0fa, type: 3}
+      propertyPath: targetPosition.x
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5661498256054247462, guid: 6213d327795cdd145915b0a9f03fa0fa, type: 3}
       propertyPath: diaBox
       value: 
@@ -5083,7 +5087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5661498256054247464, guid: 6213d327795cdd145915b0a9f03fa0fa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.32
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5661498256054247464, guid: 6213d327795cdd145915b0a9f03fa0fa, type: 3}
       propertyPath: m_LocalPosition.z

@@ -25,9 +25,10 @@ public class CatMovement : MonoBehaviour
 
             // Calculate the direction vector towards the target
             Vector2 direction = (targetPosition - rb2d.position).normalized;
-
+            
             // Calculate the velocity by multiplying the direction with the speed
             Vector2 velocity = direction * speed;
+            
 
             // Assign the velocity to the Rigidbody2D's velocity property
             if (a == true)

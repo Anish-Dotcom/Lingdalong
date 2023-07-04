@@ -10,11 +10,14 @@ public class DialogueTrigger : MonoBehaviour
     public Text diaText;
     public string dia;
     public bool playerInRange;
+    public bool catDialogue = true;
 
-    
+    public static DialogueTrigger instance;
+
+
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && playerInRange)
+        if (Input.GetKeyDown(KeyCode.Space) && playerInRange && catDialogue == true)
         {
             if (diaBox.activeInHierarchy)
             {

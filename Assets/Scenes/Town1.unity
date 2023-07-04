@@ -10118,7 +10118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2893543297107255453, guid: d9ca5ae56f1ade142ba514e264906207, type: 3}
       propertyPath: sceneToLoad
-      value: sworldlandSHOP
+      value: sworldland
       objectReference: {fileID: 0}
     - target: {fileID: 2893543297107255453, guid: d9ca5ae56f1ade142ba514e264906207, type: 3}
       propertyPath: areaTransitionName

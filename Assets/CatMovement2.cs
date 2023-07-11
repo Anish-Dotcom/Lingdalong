@@ -9,7 +9,7 @@ public class CatMovement2 : MonoBehaviour
     public Transform[] targetPositions;
     public int currentTargetIndex = 0;
 
-    public float speed = 8f;
+    public float speed = 5f;
 
 
     void Start()

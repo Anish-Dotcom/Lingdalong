@@ -9,7 +9,6 @@ public class REALWALK : MonoBehaviour
 
     public Animator myAnim;
     public static REALWALK instance;
-    public string areaTransitionName;
 
     private Vector3 bottemLeftLimit;
     private Vector3 TopRightLimit;

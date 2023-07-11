@@ -10,11 +10,7 @@ public class AreaEnterence : MonoBehaviour
     void Start()
     {
 
-        if (transitionName == REALWALK.instance.areaTransitionName)
-        {
-            REALWALK.instance.transform.position = transform.position;
-            
-        } 
+        
         
     }
 

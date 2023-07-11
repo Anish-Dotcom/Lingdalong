@@ -280,7 +280,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1176317767, guid: d9ca5ae56f1ade142ba514e264906207, type: 3}
       propertyPath: transitionName
-      value: Hajimari-1
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1176317768, guid: d9ca5ae56f1ade142ba514e264906207, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5000,6 +5000,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1176317766, guid: d9ca5ae56f1ade142ba514e264906207, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1176317768, guid: d9ca5ae56f1ade142ba514e264906207, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.89

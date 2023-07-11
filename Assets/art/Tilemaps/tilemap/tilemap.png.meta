@@ -1837,8 +1837,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tilemap_79: -735574651
-      tilemap_68: 223831765
       tilemap_45: 1292817634
       tilemap_49: 1671006925
       tilemap_46: 955634512
@@ -1891,12 +1889,13 @@ TextureImporter:
       tilemap_64: 1571045940
       tilemap_12: -1989013684
       tilemap_16: 1667644927
+      tilemap_79: -735574651
       tilemap_41: -959385437
-      tilemap_32: 721710185
       tilemap_43: -883897858
       tilemap_50: -1624951025
-      tilemap_55: 796402327
+      tilemap_32: 721710185
       tilemap_72: 389433398
+      tilemap_55: 796402327
       tilemap_37: -840873958
       tilemap_0: -172097017
       tilemap_52: 163163370
@@ -1911,12 +1910,13 @@ TextureImporter:
       tilemap_81: -89666244
       tilemap_74: -1428083113
       tilemap_9: 583973866
+      tilemap_63: 2086582319
       tilemap_11: -1956451245
       tilemap_26: -188674782
-      tilemap_76: 1669146644
       tilemap_21: -71988213
+      tilemap_68: 223831765
       tilemap_56: 1262969757
-      tilemap_63: 2086582319
+      tilemap_76: 1669146644
       tilemap_33: -582544792
       tilemap_1: -1584628398
   spritePackingTag: 

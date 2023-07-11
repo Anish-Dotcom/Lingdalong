@@ -9,6 +9,8 @@ public class exit : MonoBehaviour
 
     public AreaEnterence TheEnterence;
 
+
+
     void Start()
     {
     }

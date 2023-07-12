@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class pickup : MonoBehaviour
 {
+    public GameObject soysauceimage;
+
     public Sprite itemsprite;
     public string itemname;
     public Image itemimage;
@@ -31,6 +33,10 @@ public class pickup : MonoBehaviour
                 itemimage.sprite = itemsprite;
                 itemtext.text = itemname;
                 StartCoroutine(goaway());
+            }
+            if (itemname == "+soy sauce")
+            {
+                soysauceimage.SetActive(true);
             }
         }
     }

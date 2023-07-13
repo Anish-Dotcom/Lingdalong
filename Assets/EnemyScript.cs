@@ -10,9 +10,10 @@ public class EnemyScript : MonoBehaviour
     public Collider2D Rad;
     public float movementSpeed = 5f;
     public bool playerInbounds = false;
-
+ 
     public GameObject Enemy;
 
+    public Animator myAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,9 @@ public class EnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        myAnim.SetFloat("MoveX", transform.position.x);
+        myAnim.SetFloat("MoveY", transform.position.y);
 
         
         if (playerInbounds == true)

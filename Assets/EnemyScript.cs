@@ -11,6 +11,8 @@ public class EnemyScript : MonoBehaviour
     public float movementSpeed = 5f;
     public bool playerInbounds = false;
 
+    public GameObject Enemy;
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +30,11 @@ public class EnemyScript : MonoBehaviour
             Vector2 direction = REALWALK.instance.transform.position - transform.position;
             direction.Normalize();
             GetComponent<Rigidbody2D>().velocity = direction * movementSpeed;
+        }
+
+        if(REALWALK.instance.killmonster == true && REALWALK.instance.hitmonster == true)
+        {
+            Enemy.SetActive(false);
         }
 
     }

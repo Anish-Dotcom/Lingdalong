@@ -1108,9 +1108,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1059869048}
-  - component: {fileID: 1059869047}
   - component: {fileID: 1059869046}
   - component: {fileID: 1059869045}
+  - component: {fileID: 1059869049}
   m_Layer: 0
   m_Name: warningbox
   m_TagString: Untagged
@@ -1160,22 +1160,6 @@ CircleCollider2D:
   m_Offset: {x: 1.305589, y: -1.4879336}
   serializedVersion: 2
   m_Radius: 1.2366736
---- !u!114 &1059869047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1059869044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8564f916d6836ea4eb29bedfa63a2cc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  warningbox: {fileID: 0}
-  warningboxui: {fileID: 510485549}
-  warningtext: {fileID: 1193318155}
-  text: You can not go back.
 --- !u!4 &1059869048
 Transform:
   m_ObjectHideFlags: 0
@@ -1191,6 +1175,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1059869049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059869044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96e0f3d54406cd648b40a5ea52175a53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warningboxui: {fileID: 510485549}
+  warningtext: {fileID: 1193318155}
+  text: You can not go back.
 --- !u!114 &1193318155 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8560575283690102459, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}

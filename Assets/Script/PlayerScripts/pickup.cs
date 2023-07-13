@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class pickup : MonoBehaviour
 {
     public GameObject soysauceimage;
+    public bool soysauceimageactive;
     public GameObject carrotsimage;
 
     public Sprite itemsprite;
@@ -17,10 +18,12 @@ public class pickup : MonoBehaviour
     public GameObject pickuptext;
     public bool playerInRange;
 
+    public static pickup instance;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        instance = this;
     }
 
     // Update is called once per frame
@@ -38,7 +41,8 @@ public class pickup : MonoBehaviour
             if (itemname == "+soy sauce")
             {
                 soysauceimage.SetActive(true);
-            }
+                soysauceimageactive = true;
+}
             if (itemname == "+carrots")
             {
                 carrotsimage.SetActive(true);

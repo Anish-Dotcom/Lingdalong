@@ -1180,6 +1180,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 257062636ba9c70429e7f8c0a6048b7d, type: 3}
+--- !u!114 &569181171 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8560575283690102459, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
+  m_PrefabInstance: {fileID: 884102455}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &674864102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,6 +1785,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
+--- !u!1 &939992791 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7321287011589485458, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
+  m_PrefabInstance: {fileID: 884102455}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1081910468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1975,6 +1991,98 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1408723007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1408723010}
+  - component: {fileID: 1408723009}
+  - component: {fileID: 1408723008}
+  - component: {fileID: 1408723011}
+  m_Layer: 0
+  m_Name: Warningbarrier
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!58 &1408723008
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408723007}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.28799105, y: -4.7766886}
+  serializedVersion: 2
+  m_Radius: 1.2745992
+--- !u!61 &1408723009
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408723007}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.27805984, y: -4.588004}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.35058, y: 0.7219391}
+  m_EdgeRadius: 0
+--- !u!4 &1408723010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408723007}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.16334206, y: 1.4642335, z: -6.8207846}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1408723011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408723007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8564f916d6836ea4eb29bedfa63a2cc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warningbox: {fileID: 1408723007}
+  warningboxui: {fileID: 939992791}
+  warningtext: {fileID: 569181171}
+  text: Please obtain "soy sauce" before continuing
 --- !u!1 &1575667695
 GameObject:
   m_ObjectHideFlags: 0
@@ -3091,6 +3199,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soysauceimage: {fileID: 2147392014}
+  soysauceimageactive: 0
+  carrotsimage: {fileID: 0}
   itemsprite: {fileID: 21300000, guid: 4857c330c82007d40b98501b572d2f77, type: 3}
   itemname: +soy sauce
   itemimage: {fileID: 808139409}

@@ -1441,6 +1441,7 @@ GameObject:
   - component: {fileID: 535533176}
   - component: {fileID: 535533175}
   - component: {fileID: 535533180}
+  - component: {fileID: 535533181}
   m_Layer: 6
   m_Name: image
   m_TagString: Untagged
@@ -1583,6 +1584,26 @@ CircleCollider2D:
   m_Offset: {x: -0.0056095123, y: 0}
   serializedVersion: 2
   m_Radius: 5.8773174
+--- !u!95 &535533181
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535533174}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c4c52cb2c9444844da497e12c76e12d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &546223383
 GameObject:
   m_ObjectHideFlags: 0

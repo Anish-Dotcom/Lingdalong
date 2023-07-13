@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class pickup : MonoBehaviour
 {
     public GameObject soysauceimage;
+    public GameObject carrotsimage;
 
     public Sprite itemsprite;
     public string itemname;
@@ -37,6 +38,10 @@ public class pickup : MonoBehaviour
             if (itemname == "+soy sauce")
             {
                 soysauceimage.SetActive(true);
+            }
+            if (itemname == "+carrots")
+            {
+                carrotsimage.SetActive(true);
             }
         }
     }

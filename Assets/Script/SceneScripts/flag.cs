@@ -22,32 +22,32 @@ public class flag : MonoBehaviour
     }
     IEnumerator anima1()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.25f);
         myTilemap.SetTile(new Vector3Int(x, y, z), anim1);
         StartCoroutine(anima2());
     }
 
     IEnumerator anima2()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.25f);
         myTilemap.SetTile(new Vector3Int(x, y, z), anim2);
         StartCoroutine(anima3());
     }
     IEnumerator anima3()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.25f);
         myTilemap.SetTile(new Vector3Int(x, y, z), anim3);
         StartCoroutine(anima4());
     }
     IEnumerator anima4()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.25f);
         myTilemap.SetTile(new Vector3Int(x, y, z), anim4);
         StartCoroutine(anima5());
     }
     IEnumerator anima5()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.25f);
         myTilemap.SetTile(new Vector3Int(x, y, z), anim5);
         StartCoroutine(anima1());
     }

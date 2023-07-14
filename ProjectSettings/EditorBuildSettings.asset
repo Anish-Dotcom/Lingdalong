@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/housy.unity
+    guid: d858178ebf1b51b41bf8865c7bcc6ea1
+  - enabled: 1
     path: Assets/Scenes/Home.unity
     guid: bfec88134ee8e7f43bdeb4c0d81effa7
   - enabled: 1
@@ -26,9 +29,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Town1.unity
     guid: 9189cbfb8a6a69e4390f0ebb2aa49a8f
-  - enabled: 1
-    path: Assets/Scenes/housy.unity
-    guid: d858178ebf1b51b41bf8865c7bcc6ea1
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

@@ -8,6 +8,7 @@ public class pickup : MonoBehaviour
     public GameObject soysauceimage;
     public bool soysauceimageactive;
     public GameObject carrotsimage;
+    public GameObject swordimage;
 
     public Sprite itemsprite;
     public string itemname;
@@ -42,10 +43,14 @@ public class pickup : MonoBehaviour
             {
                 soysauceimage.SetActive(true);
                 soysauceimageactive = true;
-}
+            }
             if (itemname == "+carrots")
             {
                 carrotsimage.SetActive(true);
+            }
+            if (itemname == "+sword")
+            {
+                swordimage.SetActive(true);
             }
         }
     }

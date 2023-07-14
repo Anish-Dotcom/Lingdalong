@@ -152,7 +152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &46914535
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -236,6 +236,7 @@ MonoBehaviour:
   soysauceimageactive: 0
   carrotsimage: {fileID: 0}
   swordimage: {fileID: 451641036}
+  swordimageactive: 0
   itemsprite: {fileID: 21300000, guid: 56b4b3910ba294e438a6b6f2fd84670d, type: 3}
   itemname: +sword
   itemimage: {fileID: 20821654}
@@ -2287,6 +2288,7 @@ GameObject:
   - component: {fileID: 511530321}
   - component: {fileID: 511530324}
   - component: {fileID: 511530320}
+  - component: {fileID: 511530325}
   m_Layer: 0
   m_Name: swordlandceo1
   m_TagString: Untagged
@@ -2436,6 +2438,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6034157, y: 2.6247501}
   m_EdgeRadius: 0
+--- !u!114 &511530325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511530319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bace7db29dec73d4ca6623b409a10a72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sword: {fileID: 46914534}
+  active: 0
 --- !u!1 &580256913
 GameObject:
   m_ObjectHideFlags: 0
@@ -4872,7 +4888,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1913915677
 SpriteRenderer:
   m_ObjectHideFlags: 0

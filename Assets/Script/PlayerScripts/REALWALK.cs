@@ -48,8 +48,10 @@ public class REALWALK : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.J) || Input.GetMouseButtonDown(0))
         {
-
-            StartCoroutine(startSwordAnim());
+            if(pickup.instance.swordimageactive == true)
+            {
+                StartCoroutine(startSwordAnim());
+            }
         }
 
     }

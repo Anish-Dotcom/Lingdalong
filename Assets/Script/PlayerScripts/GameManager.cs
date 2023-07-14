@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 
     public PlayerStats[] playerStats;
 
+        
+
     // Start is called before the first frame update
     void Start()
     {

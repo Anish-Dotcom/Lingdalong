@@ -26,8 +26,7 @@ public class REALWALK : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        DontDestroyOnLoad(gameObject);  
+ 
     }
 
     // Update is called once per frame

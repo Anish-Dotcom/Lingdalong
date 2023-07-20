@@ -18,7 +18,6 @@ public class CameraController : MonoBehaviour
     void Start()
     {
         //sets the boundry and target
-        target = REALWALK.instance.transform;
 
         halfHight = Camera.main.orthographicSize;
         halfwidth = halfHight * Camera.main.aspect;
@@ -26,29 +25,33 @@ public class CameraController : MonoBehaviour
         bottemLeftLimit = themap.localBounds.min + new Vector3(halfwidth, halfHight, 0f);
         TopRightLimit = themap.localBounds.max + new Vector3(-halfwidth, -halfHight, 0f);
 
+       
+
         StartCoroutine(GetLocalBounds());
 
 
 
-        IEnumerator GetLocalBounds()
-
-        {
-
-            yield return new WaitForSeconds(0.1f);
-
-            REALWALK.instance.SetBounds(themap.localBounds.min, themap.localBounds.max);
-
-        }
+        
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
         transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
-
+        
 
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottemLeftLimit.x, TopRightLimit.x),
                                  Mathf.Clamp(transform.position.y, bottemLeftLimit.y, TopRightLimit.y),
                                  transform.position.z);
+    }
+
+    IEnumerator GetLocalBounds()
+
+    {
+
+        yield return new WaitForSeconds(0.1f);
+
+        REALWALK.instance.SetBounds(themap.localBounds.min, themap.localBounds.max);
+
     }
 }

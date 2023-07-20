@@ -10,15 +10,19 @@ public class REALWALK : MonoBehaviour
     public Animator myAnim;
     public static REALWALK instance;
 
+    public Transform areaEnterence;
+
     private Vector3 bottemLeftLimit;
     private Vector3 TopRightLimit;
 
     public bool killmonster = false;
     public bool hitmonster = false;
 
+    public string areaTransitionName;
+
     // Use this for initialization
-    void Awake()  {
-        if(instance == null)
+    void Awake() {
+        if (instance == null)
         {
             instance = this;
         }
@@ -26,8 +30,10 @@ public class REALWALK : MonoBehaviour
         {
             Destroy(gameObject);
         }
- 
+
+
     }
+    
 
     // Update is called once per frame
     void Update() {
@@ -35,6 +41,8 @@ public class REALWALK : MonoBehaviour
 
         myAnim.SetFloat("moveX", rb.velocity.x);
         myAnim.SetFloat("moveY", rb.velocity.y);
+
+        
 
         if(Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
         {

@@ -7,8 +7,7 @@ public class exit : MonoBehaviour
 {
     public string sceneToLoad;
 
-    public AreaEnterence TheEnterence;
-
+    public string areaTransitionName;
 
 
     void Start()
@@ -20,6 +19,8 @@ public class exit : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene(sceneToLoad);
+
+            REALWALK.instance.areaTransitionName = areaTransitionName;
         }
     }
 }

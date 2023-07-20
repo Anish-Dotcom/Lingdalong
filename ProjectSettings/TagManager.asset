@@ -52,6 +52,9 @@ TagManager:
   - name: SolidObjects
     uniqueID: 386953391
     locked: 0
+  - name: Oversolid
+    uniqueID: 2974071629
+    locked: 0
   - name: Npc
     uniqueID: 2634422593
     locked: 0

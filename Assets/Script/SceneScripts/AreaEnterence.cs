@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AreaEnterence : MonoBehaviour
 {
-    public string transitionName;
+    public string TransitionName;
 
     // Start is called before the first frame update
     void Start()

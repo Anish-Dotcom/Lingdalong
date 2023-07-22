@@ -32862,6 +32862,7 @@ MonoBehaviour:
   soysauceimageactive: 0
   carrotsimage: {fileID: 2052327089}
   swordimage: {fileID: 0}
+  swordimageactive: 0
   itemsprite: {fileID: 21300000, guid: 90166d02190b1034db0da5556e816528, type: 3}
   itemname: +carrots
   itemimage: {fileID: 1858301948}

@@ -32,6 +32,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Town1.unity
     guid: 9189cbfb8a6a69e4390f0ebb2aa49a8f
+  - enabled: 1
+    path: Assets/Scenes/coastal town.unity
+    guid: cea924796f9857446a9b89f89b9a84d0
+  - enabled: 1
+    path: Assets/Scenes/shrimpshop.unity
+    guid: 8d39235cd68b0274abb371bc4671fc69
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

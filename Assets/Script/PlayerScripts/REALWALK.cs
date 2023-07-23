@@ -62,6 +62,14 @@ public class REALWALK : MonoBehaviour
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.K) || Input.GetMouseButtonDown(1))
+        {
+            if (pickup.instance.swordimageactive == true)
+            {
+                Debug.Log("a");
+            }
+        }
+
     }
 
     public void SetBounds(Vector3 botLeft, Vector3 topRight)

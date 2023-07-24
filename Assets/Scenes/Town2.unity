@@ -1510,9 +1510,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0056095123, y: 0}
+  m_Offset: {x: -0.0028076172, y: 0}
   serializedVersion: 2
-  m_Radius: 5.8773174
+  m_Radius: 1.9144325
 --- !u!95 &535533181
 Animator:
   serializedVersion: 4
@@ -1571,13 +1571,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1438309310346915038, guid: a888d6abb887fdb4b8e33b28ad317454, type: 3}
+      propertyPath: m_Radius
+      value: 0.4979787
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438309310346915038, guid: a888d6abb887fdb4b8e33b28ad317454, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3886109332547007881, guid: a888d6abb887fdb4b8e33b28ad317454, type: 3}
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
     - target: {fileID: 3886109332547007887, guid: a888d6abb887fdb4b8e33b28ad317454, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3886109332547007887, guid: a888d6abb887fdb4b8e33b28ad317454, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10886,7 +10894,7 @@ Transform:
   - {fileID: 748227888}
   - {fileID: 14346411}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1416113966
 GameObject:

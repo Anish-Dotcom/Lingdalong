@@ -9,19 +9,33 @@ public class sword : MonoBehaviour
     public Camera mainCamera;
     public GameObject gotopos;
     public GameObject player;
-
+    public float rotationSpeed = 200f;
     public bool swordGoing;
 
     // Start is called before the first frame update
     void Start()
     {
         mainCamera = Camera.main;
+        sworditem.transform.position = player.transform.position;
+        sworditem.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K) || Input.GetMouseButtonDown(1))
+        // Get the current rotation of the GameObject
+        Vector3 currentRotation = sworditem.transform.rotation.eulerAngles;
+
+        // Calculate the new Z-axis rotation
+        float newZRotation = currentRotation.z + (rotationSpeed * Time.deltaTime);
+
+        // Create a new rotation with the updated Z-axis value
+        Quaternion newRotation = Quaternion.Euler(currentRotation.x, currentRotation.y, newZRotation);
+
+        // Apply the new rotation to the GameObject
+        sworditem.transform.rotation = newRotation;
+
+        if (Input.GetKeyDown(KeyCode.K) || Input.GetMouseButtonDown(1) && swordGoing == false)
         {
             
             if (pickup.instance.swordimageactive == true)
@@ -36,18 +50,14 @@ public class sword : MonoBehaviour
         }
         if (swordGoing == true)
         {
+            sworditem.SetActive(true);
             float distance = Vector3.Distance(sworditem.transform.position, gotopos.transform.position);
             sworditem.transform.position = Vector3.MoveTowards(sworditem.transform.position, gotopos.transform.position, Time.deltaTime * swordSpeed);
             if (sworditem.transform.position == gotopos.transform.position)
             {
-                swordSpeed = 8;
+                swordSpeed = 15;
                 StartCoroutine(comeback());
             }
-        }
-        if(swordGoing == false)
-        {
-            float distance = Vector3.Distance(sworditem.transform.position, player.transform.position);
-            sworditem.transform.position = Vector3.MoveTowards(sworditem.transform.position, player.transform.position, Time.deltaTime * swordSpeed);
         }
     }
 
@@ -57,5 +67,17 @@ public class sword : MonoBehaviour
         swordGoing = false;
         float distance = Vector3.Distance(sworditem.transform.position, player.transform.position);
         sworditem.transform.position = Vector3.MoveTowards(sworditem.transform.position, player.transform.position, Time.deltaTime * swordSpeed);
+        itcameback();
+    }
+    public void itcameback()
+    {
+        if (sworditem.transform.position == player.transform.position)
+        {
+            swordSpeed = 1000;
+            float distance = Vector3.Distance(sworditem.transform.position, player.transform.position);
+            sworditem.transform.position = Vector3.MoveTowards(sworditem.transform.position, player.transform.position, Time.deltaTime * swordSpeed);
+            sworditem.SetActive(false);
+        }
+        
     }
 }

@@ -20,6 +20,9 @@ public class REALWALK : MonoBehaviour
 
     public string areaTransitionName;
 
+    public GameObject sword;
+    public float swordSpeed = 2;
+
     // Use this for initialization
     void Awake() {
         if (instance == null)
@@ -66,7 +69,8 @@ public class REALWALK : MonoBehaviour
         {
             if (pickup.instance.swordimageactive == true)
             {
-                Debug.Log("a");
+                Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                sword.transform.position = Vector2.MoveTowards(transform.position, mousePosition, swordSpeed * Time.deltaTime);
             }
         }
 

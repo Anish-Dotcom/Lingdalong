@@ -53,9 +53,6 @@ public class REALWALK : MonoBehaviour
             myAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
         }
 
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottemLeftLimit.x, TopRightLimit.x),
-                                 Mathf.Clamp(transform.position.y, bottemLeftLimit.y, TopRightLimit.y),
-                                 transform.position.z);
 
         if (Input.GetKeyDown(KeyCode.J) || Input.GetMouseButtonDown(0))
         {

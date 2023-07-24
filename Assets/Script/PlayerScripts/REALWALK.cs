@@ -62,15 +62,6 @@ public class REALWALK : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.K) || Input.GetMouseButtonDown(1))
-        {
-            if (pickup.instance.swordimageactive == true)
-            {
-                Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                sword.transform.position = Vector2.MoveTowards(transform.position, mousePosition, swordSpeed * Time.deltaTime);
-            }
-        }
-
     }
 
     public void SetBounds(Vector3 botLeft, Vector3 topRight)

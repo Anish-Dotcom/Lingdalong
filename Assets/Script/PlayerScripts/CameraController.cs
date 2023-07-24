@@ -51,7 +51,5 @@ public class CameraController : MonoBehaviour
 
         yield return new WaitForSeconds(0.1f);
 
-        REALWALK.instance.SetBounds(themap.localBounds.min, themap.localBounds.max);
-
     }
 }

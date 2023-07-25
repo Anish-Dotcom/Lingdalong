@@ -20,6 +20,8 @@ public class pickup : MonoBehaviour
     public GameObject pickuptext;
     public bool playerInRange;
 
+    public bool playerHasChild;
+
     public static pickup instance;
 
     // Start is called before the first frame update
@@ -44,6 +46,10 @@ public class pickup : MonoBehaviour
             {
                 soysauceimage.SetActive(true);
                 soysauceimageactive = true;
+            }
+            if (itemname == "+ child")
+            {
+                playerHasChild = true;
             }
             if (itemname == "+carrots")
             {

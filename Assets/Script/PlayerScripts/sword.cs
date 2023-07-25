@@ -63,7 +63,7 @@ public class sword : MonoBehaviour
 
     IEnumerator comeback()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.5f);
         swordGoing = false;
         float distance = Vector3.Distance(sworditem.transform.position, player.transform.position);
         sworditem.transform.position = Vector3.MoveTowards(sworditem.transform.position, player.transform.position, Time.deltaTime * swordSpeed);

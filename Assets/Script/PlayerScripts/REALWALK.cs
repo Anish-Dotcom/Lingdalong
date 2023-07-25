@@ -64,7 +64,16 @@ public class REALWALK : MonoBehaviour
                 StartCoroutine(startSwordAnim());
             }
         }
+        if(lives < 0)
+        {
+            Debug.Log("ihateb");
+            StartCoroutine(endgame());
+        }
     }
+
+    
+
+
 
     
 
@@ -97,5 +106,17 @@ public class REALWALK : MonoBehaviour
             killmonster = true;
             Debug.Log("R");
         }
+    }
+
+    IEnumerator endgame()
+    {
+        yield return new WaitForSeconds(0.5f);
+        #if UNITY_STANDALONE
+                Application.Quit();
+    #endif
+    #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+
+    #endif
     }
 }

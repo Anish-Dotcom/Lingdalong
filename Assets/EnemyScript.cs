@@ -55,13 +55,13 @@ public class EnemyScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            #if UNITY_EDITOR
-                        UnityEditor.EditorApplication.isPlaying = false;
-            #elif UNITY_WEBPLAYER
-                    Application.OpenURL(webplayerQuitURL);
-            #else
-                    Application.Quit();
-            #endif
+            StartCoroutine(lives());
         }
+    }
+
+    IEnumerator lives()
+    {
+        yield return new WaitForSeconds(1);
+        REALWALK.instance.lives -= 1;
     }
 }

@@ -47,7 +47,7 @@ public class pickup : MonoBehaviour
                 soysauceimage.SetActive(true);
                 soysauceimageactive = true;
             }
-            if (itemname == "+ child")
+            if (itemname == "+child")
             {
                 playerHasChild = true;
             }

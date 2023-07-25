@@ -128,6 +128,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3886109332547007887, guid: a888d6abb887fdb4b8e33b28ad317454, type: 3}
   m_PrefabInstance: {fileID: 577352127}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &62227256 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5491500557865778780, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
+  m_PrefabInstance: {fileID: 68371404}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &68371404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -353,6 +364,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8498171786404139494, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
   m_PrefabInstance: {fileID: 68371404}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &415488138 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8560575283690102459, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
+  m_PrefabInstance: {fileID: 68371404}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &577352127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -530,12 +552,12 @@ MonoBehaviour:
   carrotsimage: {fileID: 0}
   swordimage: {fileID: 0}
   swordimageactive: 0
-  itemsprite: {fileID: 0}
-  itemname: + child
-  itemimage: {fileID: 0}
-  itemtext: {fileID: 0}
-  pickupbox: {fileID: 0}
-  item: {fileID: 0}
+  itemsprite: {fileID: 21300000, guid: be908cf04e7aa434ba94129337abe195, type: 3}
+  itemname: +child
+  itemimage: {fileID: 62227256}
+  itemtext: {fileID: 1856062764}
+  pickupbox: {fileID: 1296295341}
+  item: {fileID: 625432994}
   pickuptext: {fileID: 1951040336}
   playerInRange: 0
   playerHasChild: 0
@@ -565,6 +587,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7385993, y: 1.8191757}
   m_EdgeRadius: 0
+--- !u!1 &683502268 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7321287011589485458, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
+  m_PrefabInstance: {fileID: 68371404}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &837089014
 GameObject:
   m_ObjectHideFlags: 0
@@ -11823,6 +11850,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1296295341 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3995606118534774050, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
+  m_PrefabInstance: {fileID: 68371404}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1353920073
 GameObject:
   m_ObjectHideFlags: 0
@@ -14064,6 +14096,7 @@ GameObject:
   - component: {fileID: 1792981035}
   - component: {fileID: 1792981034}
   - component: {fileID: 1792981033}
+  - component: {fileID: 1792981036}
   m_Layer: 0
   m_Name: Barrier
   m_TagString: Untagged
@@ -14109,10 +14142,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8564f916d6836ea4eb29bedfa63a2cc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  warningbox: {fileID: 0}
-  warningboxui: {fileID: 0}
-  warningtext: {fileID: 0}
-  text: 
+  warningbox: {fileID: 1792981032}
+  warningboxui: {fileID: 683502268}
+  warningtext: {fileID: 415488138}
+  text: Find store owners child before entering.
 --- !u!4 &1792981035
 Transform:
   m_ObjectHideFlags: 0
@@ -14128,6 +14161,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &1792981036
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792981032}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.5569649, y: -0.8054466}
+  m_Size: {x: 3.1220093, y: 3.1819687}
+  m_Direction: 0
 --- !u!1 &1849855298
 GameObject:
   m_ObjectHideFlags: 0
@@ -16294,6 +16343,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9ca5ae56f1ade142ba514e264906207, type: 3}
+--- !u!114 &1856062764 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 100409005477603969, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
+  m_PrefabInstance: {fileID: 68371404}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1925735109
 GameObject:
   m_ObjectHideFlags: 0

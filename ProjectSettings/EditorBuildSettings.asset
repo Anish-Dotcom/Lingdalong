@@ -26,12 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Town2.unity
     guid: c1fcc36c1a06812489ff62ca2a85bdd2
-  - enabled: 1
-    path: Assets/Scenes/boatshop.unity
-    guid: 36c63325b01d11f4b8a907059fdddfbe
-  - enabled: 1
-    path: Assets/Scenes/coastal town 2.unity
-    guid: efa4c0d3bd17203498e654c7e04a36d1
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
@@ -42,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Town1.unity
     guid: 9189cbfb8a6a69e4390f0ebb2aa49a8f
   - enabled: 1
-    path: Assets/Scenes/coastal town 1.unity
+    path: Assets/Scenes/coastal town.unity
     guid: cea924796f9857446a9b89f89b9a84d0
   - enabled: 1
     path: Assets/Scenes/shrimpshop.unity

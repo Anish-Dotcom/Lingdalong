@@ -38,18 +38,19 @@ public class REALWALK : MonoBehaviour
 
 
     }
-    
+
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
         rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
 
         myAnim.SetFloat("moveX", rb.velocity.x);
         myAnim.SetFloat("moveY", rb.velocity.y);
 
-        
 
-        if(Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+
+        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
         {
             myAnim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
             myAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
@@ -58,22 +59,12 @@ public class REALWALK : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.J) || Input.GetMouseButtonDown(0))
         {
-            if(pickup.instance.swordimageactive == true)
+            if (pickup.instance.swordimageactive == true)
             {
                 StartCoroutine(startSwordAnim());
             }
         }
-        if (lives == 0)
-        {
-        #if UNITY_EDITOR
-                    UnityEditor.EditorApplication.isPlaying = false;
-        #elif UNITY_WEBPLAYER
-                            Application.OpenURL(webplayerQuitURL);
-        #else
-                            Application.Quit();
-        #endif
-                }
-            }
+    }
 
     
 

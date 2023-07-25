@@ -24,6 +24,10 @@ public class barrier : MonoBehaviour
         {
             warningbox.SetActive(false);
         }
+        if (pickup.instance.playerHasChild == true)
+        {
+            warningbox.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

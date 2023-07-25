@@ -23,8 +23,6 @@ public class REALWALK : MonoBehaviour
     public GameObject sword;
     public float swordSpeed = 2;
 
-    public int lives;
-
     // Use this for initialization
     void Awake() {
         if (instance == null)
@@ -63,19 +61,8 @@ public class REALWALK : MonoBehaviour
                 StartCoroutine(startSwordAnim());
             }
         }
-        if (lives == 0)
-        {
-        #if UNITY_EDITOR
-                    UnityEditor.EditorApplication.isPlaying = false;
-        #elif UNITY_WEBPLAYER
-                            Application.OpenURL(webplayerQuitURL);
-        #else
-                            Application.Quit();
-        #endif
-                }
-            }
 
-    
+    }
 
     public void SetBounds(Vector3 botLeft, Vector3 topRight)
     {

@@ -38,7 +38,7 @@ public class sword : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K) || Input.GetMouseButtonDown(1) && swordGoing == false)
         {
             
-            if (pickup.instance.swordimageactive == true)
+            if (pickup.instance.swordimageactive == true && REALWALK.instance.rb.velocity == new Vector2(0,0))
             {
                 swordSpeed = 15;
                 Vector3 mouseScreenPosition = Input.mousePosition;

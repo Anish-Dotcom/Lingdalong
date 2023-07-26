@@ -31,6 +31,6 @@ public class mainmenu : MonoBehaviour
 
     public void quitButton()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
     }
 }

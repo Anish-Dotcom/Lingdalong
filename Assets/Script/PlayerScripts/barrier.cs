@@ -28,6 +28,10 @@ public class barrier : MonoBehaviour
         {
             warningbox.SetActive(false);
         }
+        if (pickup.instance.swordimageactive == true)
+        {
+            warningbox.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

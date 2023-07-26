@@ -1643,7 +1643,10 @@ MonoBehaviour:
   dialogue:
     name: Connor Z. Festival
     sentences:
-    - Hey bestie!! Wanna buy some  boats from yours truly.
+    - Thanks for my baby, baby!
+    - Also one more teeny task please? Could you get my brother Jamal Jackson here?
+      He's a bit silly and gets lost sometimes ,period.
+    - If you get him back I'll like totally give you the boat tomorrow morning!
   diaBox: {fileID: 1538605720}
   diaText: {fileID: 87079130}
   dia: 

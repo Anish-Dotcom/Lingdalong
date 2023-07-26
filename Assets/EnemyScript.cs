@@ -15,6 +15,8 @@ public class EnemyScript : MonoBehaviour
     public Rigidbody2D myRb;
     public Animator myAnim;
 
+    public int health;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,11 +38,15 @@ public class EnemyScript : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = direction * movementSpeed;
         }
 
-        if(REALWALK.instance.killmonster == true && REALWALK.instance.hitmonster == true)
+        if(REALWALK.instance.killmonster == true && REALWALK.instance.hitmonster == true && playerInbounds == true)
+        {
+            Debug.Log('Y');
+            health -= 1;
+        }
+        if(health < 1)
         {
             Enemy.SetActive(false);
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -64,4 +70,5 @@ public class EnemyScript : MonoBehaviour
         yield return new WaitForSeconds(1);
         REALWALK.instance.lives -= 1;
     }
+    
 }

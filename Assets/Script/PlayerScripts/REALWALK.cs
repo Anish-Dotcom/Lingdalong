@@ -64,7 +64,7 @@ public class REALWALK : MonoBehaviour
                 StartCoroutine(startSwordAnim());
             }
         }
-        if(lives < 0)
+        if(lives < 1)
         {
             Debug.Log("ihateb");
             StartCoroutine(endgame());
@@ -90,10 +90,11 @@ public class REALWALK : MonoBehaviour
         myAnim.SetBool("Sword", true);
         StartCoroutine(endSwordAnim());
         hitmonster = true;
+        Debug.Log('R');
     }
     IEnumerator endSwordAnim()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.00001f);
         myAnim.SetBool("Sword", false);
         hitmonster =false;
     }

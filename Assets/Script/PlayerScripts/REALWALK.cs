@@ -47,6 +47,7 @@ public class REALWALK : MonoBehaviour
 
         myAnim.SetFloat("moveX", rb.velocity.x);
         myAnim.SetFloat("moveY", rb.velocity.y);
+        myAnim.SetFloat("Yvel", rb.velocity.y);
 
 
 

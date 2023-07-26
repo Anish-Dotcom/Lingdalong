@@ -1413,6 +1413,7 @@ MonoBehaviour:
   movementSpeed: 5
   playerInbounds: 0
   Enemy: {fileID: 535533174}
+  myRb: {fileID: 535533175}
   myAnim: {fileID: 535533181}
 --- !u!70 &535533177
 CapsuleCollider2D:

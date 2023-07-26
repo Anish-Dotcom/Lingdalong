@@ -10,9 +10,9 @@ public class EnemyScript : MonoBehaviour
     public Collider2D Rad;
     public float movementSpeed = 5f;
     public bool playerInbounds = false;
- 
+    
     public GameObject Enemy;
-
+    public Rigidbody2D myRb;
     public Animator myAnim;
 
     // Start is called before the first frame update
@@ -25,10 +25,10 @@ public class EnemyScript : MonoBehaviour
     void Update()
     {
 
-        myAnim.SetFloat("MoveX", transform.position.x);
-        myAnim.SetFloat("MoveY", transform.position.y);
+        myAnim.SetFloat("Yvel", myRb.velocity.y);
+        myAnim.SetFloat("Xvel", myRb.velocity.x);
 
-        
+
         if (playerInbounds == true)
         {
             Vector2 direction = REALWALK.instance.transform.position - transform.position;

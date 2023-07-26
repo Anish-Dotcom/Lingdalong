@@ -1216,6 +1216,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3886109332547007890, guid: a888d6abb887fdb4b8e33b28ad317454, type: 3}
+      propertyPath: lives
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886109332547007890, guid: a888d6abb887fdb4b8e33b28ad317454, type: 3}
       propertyPath: areaTransitionName
       value: 
       objectReference: {fileID: 0}
@@ -3251,6 +3255,7 @@ MonoBehaviour:
   item: {fileID: 1603713170}
   pickuptext: {fileID: 674864102}
   playerInRange: 0
+  playerHasChild: 0
 --- !u!61 &1603713172
 BoxCollider2D:
   m_ObjectHideFlags: 0

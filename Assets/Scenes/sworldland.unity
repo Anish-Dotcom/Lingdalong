@@ -242,7 +242,7 @@ MonoBehaviour:
   carrotsimage: {fileID: 0}
   swordimage: {fileID: 451641036}
   swordimageactive: 0
-  itemsprite: {fileID: 21300000, guid: 56b4b3910ba294e438a6b6f2fd84670d, type: 3}
+  itemsprite: {fileID: 21300000, guid: 2b467973e415c784e8c3f002ff7e1c89, type: 3}
   itemname: +sword
   itemimage: {fileID: 20821654}
   itemtext: {fileID: 353646012}
@@ -250,6 +250,7 @@ MonoBehaviour:
   item: {fileID: 46914534}
   pickuptext: {fileID: 199373235}
   playerInRange: 0
+  playerHasChild: 0
 --- !u!61 &46914538
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2533,12 +2534,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0aa0b6c060e6f40a97a88eabe6817a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itstimetocomeback: 0
   swordSpeed: 15
   sworditem: {fileID: 1365565432}
   mainCamera: {fileID: 27255757}
   gotopos: {fileID: 1176620255}
   player: {fileID: 1414890347}
-  rotationSpeed: 500
+  rotationSpeed: 1000
   swordGoing: 0
 --- !u!4 &704697195
 Transform:

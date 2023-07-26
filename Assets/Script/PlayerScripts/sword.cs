@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class sword : MonoBehaviour
 {
+    public bool itstimetocomeback;
     public float swordSpeed;
     public GameObject sworditem;
     public Camera mainCamera;
@@ -55,20 +56,19 @@ public class sword : MonoBehaviour
             sworditem.transform.position = Vector3.MoveTowards(sworditem.transform.position, gotopos.transform.position, Time.deltaTime * swordSpeed);
             if (sworditem.transform.position == gotopos.transform.position)
             {
-                swordSpeed = 15;
-                StartCoroutine(comeback());
+                swordSpeed = 10;
+                itstimetocomeback = true;
             }
+        }
+        if (itstimetocomeback == true)
+        {
+            swordGoing = false;
+            float distance = Vector3.Distance(sworditem.transform.position, player.transform.position);
+            sworditem.transform.position = Vector3.MoveTowards(sworditem.transform.position, player.transform.position, Time.deltaTime * swordSpeed);
+            itcameback();
         }
     }
 
-    IEnumerator comeback()
-    {
-        yield return new WaitForSeconds(0.5f);
-        swordGoing = false;
-        float distance = Vector3.Distance(sworditem.transform.position, player.transform.position);
-        sworditem.transform.position = Vector3.MoveTowards(sworditem.transform.position, player.transform.position, Time.deltaTime * swordSpeed);
-        itcameback();
-    }
     public void itcameback()
     {
         if (sworditem.transform.position == player.transform.position)
@@ -76,6 +76,7 @@ public class sword : MonoBehaviour
             swordSpeed = 1000;
             float distance = Vector3.Distance(sworditem.transform.position, player.transform.position);
             sworditem.transform.position = Vector3.MoveTowards(sworditem.transform.position, player.transform.position, Time.deltaTime * swordSpeed);
+            itstimetocomeback = false;
             sworditem.SetActive(false);
         }
         

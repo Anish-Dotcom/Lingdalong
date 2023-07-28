@@ -36,7 +36,6 @@ public class lightswitch : MonoBehaviour
         {
             if (lightson == true)
             {
-                Debug.Log("pp1");
                 light1.SetActive(false);
                 light2.SetActive(false);
                 light3.SetActive(false);
@@ -48,7 +47,6 @@ public class lightswitch : MonoBehaviour
             }
             else
             {
-                Debug.Log("pp");
                 light1.SetActive(true);
                 light2.SetActive(true);
                 light3.SetActive(true);

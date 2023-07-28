@@ -12,6 +12,7 @@ public class sword : MonoBehaviour
     public GameObject player;
     public float rotationSpeed = 200f;
     public bool swordGoing;
+    public bool cooldown;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +37,7 @@ public class sword : MonoBehaviour
         // Apply the new rotation to the GameObject
         sworditem.transform.rotation = newRotation;
 
-        if (Input.GetKeyDown(KeyCode.K) || Input.GetMouseButtonDown(1) && swordGoing == false)
+        if (Input.GetKeyDown(KeyCode.K) || Input.GetMouseButtonDown(1) && swordGoing == false && cooldown == false)
         {
             
             if (pickup.instance.swordimageactive == true && REALWALK.instance.rb.velocity == new Vector2(0,0))
@@ -73,14 +74,21 @@ public class sword : MonoBehaviour
     {
         if (sworditem.transform.position == player.transform.position)
         {
+            cooldown = true;
             swordSpeed = 1000;
             float distance = Vector3.Distance(sworditem.transform.position, player.transform.position);
             sworditem.transform.position = Vector3.MoveTowards(sworditem.transform.position, player.transform.position, Time.deltaTime * swordSpeed);
             itstimetocomeback = false;
             sworditem.SetActive(false);
+            StartCoroutine(docooldown());
         }
         
     }
 
-    
+    IEnumerator docooldown()
+    {
+        yield return new WaitForSeconds(15f);
+        cooldown = false;
+    }
+
 }

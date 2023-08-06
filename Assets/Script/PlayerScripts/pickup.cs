@@ -23,6 +23,7 @@ public class pickup : MonoBehaviour
     public bool playerHasChild;
 
     public static pickup instance;
+    public int randomintineed = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +38,7 @@ public class pickup : MonoBehaviour
         {
             if (item.activeInHierarchy)
             {
+                item.SetActive(false);
                 pickupbox.SetActive(true);
                 itemimage.sprite = itemsprite;
                 itemtext.text = itemname;
@@ -57,10 +59,14 @@ public class pickup : MonoBehaviour
             }
             if (itemname == "+sword")
             {
-                swordimage.SetActive(true);
-                if (swordland.instance.active == true)
+                randomintineed = randomintineed + 1;
+                if (randomintineed == 1)
                 {
-                    swordimageactive = true;
+                    swordimage.SetActive(true);
+                    if (swordland.instance.active == true)
+                    {
+                        swordimageactive = true;
+                    }
                 }
             }
         }
@@ -84,6 +90,5 @@ public class pickup : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         pickupbox.SetActive(false);
-        item.SetActive(false);
     }
 }

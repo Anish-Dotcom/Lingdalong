@@ -345,6 +345,12 @@ MonoBehaviour:
   player: {fileID: 555538327}
   rotationSpeed: 1000
   swordGoing: 0
+  cooldown: 0
+  cooldowntime: 10
+  uiText: {fileID: 8498171785507296128}
+  uiTextObject: {fileID: 8498171785507296127}
+  nocooldownui: {fileID: 8498171785507296130}
+  yescooldownui: {fileID: 8498171785507296129}
 --- !u!4 &74347145
 Transform:
   m_ObjectHideFlags: 0
@@ -53859,3 +53865,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
+--- !u!1 &8498171785507296127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5204476122122354680, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
+  m_PrefabInstance: {fileID: 8498171785507296126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8498171785507296128 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3258715794663890254, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
+  m_PrefabInstance: {fileID: 8498171785507296126}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8498171785507296127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &8498171785507296129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5820223795589189364, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
+  m_PrefabInstance: {fileID: 8498171785507296126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8498171785507296130 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 411089089460375229, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
+  m_PrefabInstance: {fileID: 8498171785507296126}
+  m_PrefabAsset: {fileID: 0}

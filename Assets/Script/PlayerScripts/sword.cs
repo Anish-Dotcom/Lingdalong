@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class sword : MonoBehaviour
 {
@@ -13,6 +14,11 @@ public class sword : MonoBehaviour
     public float rotationSpeed = 200f;
     public bool swordGoing;
     public bool cooldown;
+    public int cooldowntime = 10;
+    public Text uiText;
+    public GameObject uiTextObject;
+    public GameObject nocooldownui;
+    public GameObject yescooldownui;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +49,7 @@ public class sword : MonoBehaviour
             if (pickup.instance.swordimageactive == true && REALWALK.instance.rb.velocity == new Vector2(0,0))
             {
                 swordSpeed = 15;
+                cooldowntime = 10;
                 Vector3 mouseScreenPosition = Input.mousePosition;
                 Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(mouseScreenPosition);
                 mouseWorldPosition.z = 0f;
@@ -80,6 +87,10 @@ public class sword : MonoBehaviour
             sworditem.transform.position = Vector3.MoveTowards(sworditem.transform.position, player.transform.position, Time.deltaTime * swordSpeed);
             itstimetocomeback = false;
             sworditem.SetActive(false);
+            uiTextObject.SetActive(true);
+            nocooldownui.SetActive(false);
+            yescooldownui.SetActive(true);
+            uiText.text = cooldowntime.ToString();
             StartCoroutine(docooldown());
         }
         
@@ -87,8 +98,38 @@ public class sword : MonoBehaviour
 
     IEnumerator docooldown()
     {
-        yield return new WaitForSeconds(15f);
-        cooldown = false;
+        yield return new WaitForSeconds(1f);
+        cooldowntime = cooldowntime - 1;
+        uiText.text = cooldowntime.ToString();
+        if (cooldowntime == 0)
+        {
+            yescooldownui.SetActive(false);
+            nocooldownui.SetActive(true);
+            uiTextObject.SetActive(false);
+            cooldown = false;
+        }
+        if (cooldowntime > 0)
+        {
+            StartCoroutine(docooldown2());
+        }
+    }
+
+    IEnumerator docooldown2()
+    {
+        yield return new WaitForSeconds(1f);
+        cooldowntime = cooldowntime - 1;
+        uiText.text = cooldowntime.ToString();
+        if (cooldowntime == 0)
+        {
+            yescooldownui.SetActive(false);
+            nocooldownui.SetActive(true);
+            uiTextObject.SetActive(false);
+            cooldown = false;
+        }
+        if (cooldowntime > 0)
+        {
+            StartCoroutine(docooldown());
+        }
     }
 
 }

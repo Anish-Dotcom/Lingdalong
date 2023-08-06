@@ -249,6 +249,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1800549818698655272, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8498171785081386266, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1404,6 +1408,7 @@ MonoBehaviour:
   Enemy: {fileID: 535533174}
   myRb: {fileID: 0}
   myAnim: {fileID: 535533181}
+  health: 0
 --- !u!70 &535533177
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

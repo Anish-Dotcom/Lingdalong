@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3886109332547007885}
-  moveSpeed: 7
+  moveSpeed: 5
   myAnim: {fileID: 1499735420}
   areaEnterence: {fileID: 1408680563786323755, guid: fab8c9065ca7852459ad22365789926a, type: 3}
   killmonster: 0

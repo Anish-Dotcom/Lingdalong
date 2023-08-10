@@ -6,7 +6,7 @@ public class swordland : MonoBehaviour
 {
     public GameObject sword;
     public bool active;
-
+    public int randomintineed = 0;
     public static swordland instance;
 
     // Start is called before the first frame update
@@ -25,8 +25,12 @@ public class swordland : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            sword.SetActive(true);
-            active = true;
+            randomintineed = randomintineed + 1;
+            if (randomintineed == 1)
+            {
+                sword.SetActive(true);
+                active = true;
+            }
         }
     }
 

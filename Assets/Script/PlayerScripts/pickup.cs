@@ -21,9 +21,9 @@ public class pickup : MonoBehaviour
     public bool playerInRange;
 
     public bool playerHasChild;
-
-    public static pickup instance;
+    public GameObject rightsidething;
     public int randomintineed = 0;
+    public static pickup instance;
 
     // Start is called before the first frame update
     void Start()
@@ -46,8 +46,10 @@ public class pickup : MonoBehaviour
             }
             if (itemname == "+soy sauce")
             {
+                randomintineed = randomintineed + 1;
                 soysauceimage.SetActive(true);
                 soysauceimageactive = true;
+                pickuptext.SetActive(false);
             }
             if (itemname == "+child")
             {
@@ -60,14 +62,9 @@ public class pickup : MonoBehaviour
             if (itemname == "+sword")
             {
                 randomintineed = randomintineed + 1;
-                if (randomintineed == 1)
-                {
-                    swordimage.SetActive(true);
-                    if (swordland.instance.active == true)
-                    {
-                        swordimageactive = true;
-                    }
-                }
+                swordimageactive = true;
+                rightsidething.SetActive(true);
+                pickuptext.SetActive(false);
             }
         }
     }
@@ -76,7 +73,11 @@ public class pickup : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
             playerInRange = true;
-            pickuptext.SetActive(true);
+            if (randomintineed == 0)
+            {
+                pickuptext.SetActive(true);
+        }
+            
     }
 
     private void OnTriggerExit2D(Collider2D collision)

@@ -396,7 +396,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -417,7 +417,7 @@ SpriteRenderer:
   m_SortingLayerID: 1916334273
   m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2b467973e415c784e8c3f002ff7e1c89, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -425,7 +425,7 @@ SpriteRenderer:
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &46914536
@@ -466,10 +466,11 @@ MonoBehaviour:
   itemimage: {fileID: 20821654}
   itemtext: {fileID: 353646012}
   pickupbox: {fileID: 2137785218}
-  item: {fileID: 46914534}
+  item: {fileID: 895265413}
   pickuptext: {fileID: 199373235}
   playerInRange: 0
   playerHasChild: 0
+  rightsidething: {fileID: 8498171785507296129}
   randomintineed: 0
 --- !u!61 &46914538
 BoxCollider2D:
@@ -2981,6 +2982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sword: {fileID: 46914534}
   active: 0
+  randomintineed: 0
 --- !u!1 &580256913
 GameObject:
   m_ObjectHideFlags: 0
@@ -3319,7 +3321,6 @@ GameObject:
   m_Component:
   - component: {fileID: 895265414}
   - component: {fileID: 895265417}
-  - component: {fileID: 895265416}
   - component: {fileID: 895265415}
   m_Layer: 0
   m_Name: sword 1 (1)
@@ -3327,7 +3328,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &895265414
 Transform:
   m_ObjectHideFlags: 0
@@ -3369,33 +3370,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4578793, y: 1.9822246}
   m_EdgeRadius: 0
---- !u!114 &895265416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895265413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdf69464951516241ba04ea3c65bd2b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soysauceimage: {fileID: 0}
-  soysauceimageactive: 0
-  carrotsimage: {fileID: 0}
-  swordimage: {fileID: 451641036}
-  swordimageactive: 0
-  itemsprite: {fileID: 21300000, guid: 2b467973e415c784e8c3f002ff7e1c89, type: 3}
-  itemname: +sword
-  itemimage: {fileID: 20821654}
-  itemtext: {fileID: 353646012}
-  pickupbox: {fileID: 2137785218}
-  item: {fileID: 895265413}
-  pickuptext: {fileID: 199373235}
-  playerInRange: 0
-  playerHasChild: 0
-  randomintineed: 0
 --- !u!212 &895265417
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3416,7 +3390,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6465,7 +6439,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7021,6 +6995,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1800549818698655272, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8498171785081386266, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -7143,3 +7121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &8498171785507296129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1800549818698655272, guid: 19c660b2b3c2912439ad1367949098cc, type: 3}
+  m_PrefabInstance: {fileID: 8498171785507296126}
+  m_PrefabAsset: {fileID: 0}

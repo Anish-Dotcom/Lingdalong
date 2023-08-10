@@ -3260,6 +3260,8 @@ MonoBehaviour:
   pickuptext: {fileID: 674864102}
   playerInRange: 0
   playerHasChild: 0
+  rightsidething: {fileID: 0}
+  randomintineed: 0
 --- !u!61 &1603713172
 BoxCollider2D:
   m_ObjectHideFlags: 0
